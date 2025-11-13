@@ -125,7 +125,7 @@ export const createNewChat = async (): Promise<string> => {
     const initialMessage: Message = {
         id: 'initial-firebase',
         sender: 'ai',
-        text: "สวัสดี! ฉันคือผู้ช่วยของคุณที่ขับเคลื่อนโดย Gemini เลือกโหมดแล้วถามอะไรก็ได้เลย",
+        text: "สวัสดี! ฉันคือผู้ช่วยของคุณ",
         timestamp: new Date().toISOString()
     };
     const docRef = await addDoc(collection(db, CHATS_COLLECTION), {
